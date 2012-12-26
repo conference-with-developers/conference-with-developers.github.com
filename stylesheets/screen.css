@@ -196,7 +196,7 @@ body > div > header {
 @media screen and (max-width: 568px) {
   /* line 42, ../../sass/_logotype.scss */
   div.bracket {
-    font-size: 3.5pt;
+    font-size: 2.8pt;
   }
 }
 /* line 1, ../../sass/_base.scss */
@@ -247,37 +247,41 @@ article > div.bracket {
   article {
     width: 90%;
   }
+  /* line 26, ../../sass/_layout.scss */
+  article > div.bracket {
+    padding: 50px 0;
+  }
 
-  /* line 27, ../../sass/_layout.scss */
+  /* line 30, ../../sass/_layout.scss */
   header {
     text-align: center;
   }
 }
-/* line 33, ../../sass/_layout.scss */
+/* line 36, ../../sass/_layout.scss */
 footer > nav {
   text-align: center;
 }
-/* line 35, ../../sass/_layout.scss */
+/* line 38, ../../sass/_layout.scss */
 footer > nav ul {
   display: block;
   margin: 50px;
 }
-/* line 38, ../../sass/_layout.scss */
+/* line 41, ../../sass/_layout.scss */
 footer > nav ul li {
   display: inline-block;
   margin: 15px;
 }
 
 @media screen and (max-width: 568px) {
-  /* line 46, ../../sass/_layout.scss */
+  /* line 49, ../../sass/_layout.scss */
   footer > nav {
-    text-align: center;
+    text-align: left;
   }
-  /* line 48, ../../sass/_layout.scss */
+  /* line 51, ../../sass/_layout.scss */
   footer > nav ul {
     display: block;
   }
-  /* line 50, ../../sass/_layout.scss */
+  /* line 53, ../../sass/_layout.scss */
   footer > nav ul li {
     width: 100%;
   }
