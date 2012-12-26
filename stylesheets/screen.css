@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -74,47 +73,53 @@ body {
   font-size: 12pt;
 }
 
-/* line 6, ../../sass/_typography.scss */
+@media screen and (max-width: 568px) {
+  /* line 7, ../../sass/_typography.scss */
+  body {
+    font-size: 10pt;
+  }
+}
+/* line 14, ../../sass/_typography.scss */
 hgroup.logotype {
   font-family: 'Raleway';
   text-align: right;
 }
-/* line 9, ../../sass/_typography.scss */
+/* line 17, ../../sass/_typography.scss */
 hgroup.logotype h1 {
   color: #44a5cb;
   font-size: 4.5em;
 }
-/* line 13, ../../sass/_typography.scss */
+/* line 21, ../../sass/_typography.scss */
 hgroup.logotype h2 {
   color: #999;
   font-size: 2.6em;
 }
 
-/* line 19, ../../sass/_typography.scss */
+/* line 27, ../../sass/_typography.scss */
 article {
   font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Meiryo,"メイリオ","ＭＳ Ｐゴシック",Verdana,Geneva,Arial,Helvetica;
 }
 
-/* line 24, ../../sass/_typography.scss */
+/* line 32, ../../sass/_typography.scss */
 nav ul {
   font-family: 'Archivo Narrow';
   font-size: 2.4em;
   color: #eee;
 }
 
-/* line 32, ../../sass/_typography.scss */
+/* line 40, ../../sass/_typography.scss */
 strong {
   font-size: 1.1em;
   font-weight: bold;
 }
 
-/* line 37, ../../sass/_typography.scss */
+/* line 45, ../../sass/_typography.scss */
 article > h1 {
   font-size: 2.2em;
   color: #44a5cb;
 }
 
-/* line 42, ../../sass/_typography.scss */
+/* line 50, ../../sass/_typography.scss */
 article > h1:before {
   content: '@';
   margin-left: -0.92em;
@@ -123,19 +128,24 @@ article > h1:before {
   vertical-align: -0.25em;
 }
 
-/* line 50, ../../sass/_typography.scss */
+/* line 58, ../../sass/_typography.scss */
 h2 {
   font-size: 1.5em;
   font-weight: bold;
 }
 
-/* line 55, ../../sass/_typography.scss */
+/* line 63, ../../sass/_typography.scss */
 article > h2:before {
   content: '-';
   margin-left: -0.5em;
   font-size: 3em;
   color: #ededed;
   vertical-align: -0.2em;
+}
+
+/* line 71, ../../sass/_typography.scss */
+a {
+  color: #ededed;
 }
 
 /* line 1, ../../sass/_logotype.scss */
@@ -183,6 +193,12 @@ body > div > header {
 }
 
 */
+@media screen and (max-width: 568px) {
+  /* line 42, ../../sass/_logotype.scss */
+  div.bracket {
+    font-size: 3.5pt;
+  }
+}
 /* line 1, ../../sass/_base.scss */
 body {
   background-color: #003e59;
@@ -210,32 +226,62 @@ article, header {
   width: 1120px;
 }
 
-/* line 10, ../../sass/_layout.scss */
+/* line 11, ../../sass/_layout.scss */
 header {
   text-align: right;
 }
 
-/* line 13, ../../sass/_layout.scss */
+/* line 14, ../../sass/_layout.scss */
 article > div.bracket {
   padding: 120px 0;
   text-align: center;
 }
 
-/* line 18, ../../sass/_layout.scss */
+@media screen and (max-width: 568px) {
+  /* line 20, ../../sass/_layout.scss */
+  header {
+    width: 100%;
+  }
+
+  /* line 24, ../../sass/_layout.scss */
+  article {
+    width: 90%;
+  }
+
+  /* line 27, ../../sass/_layout.scss */
+  header {
+    text-align: center;
+  }
+}
+/* line 33, ../../sass/_layout.scss */
 footer > nav {
   text-align: center;
 }
-/* line 20, ../../sass/_layout.scss */
+/* line 35, ../../sass/_layout.scss */
 footer > nav ul {
   display: block;
   margin: 50px;
 }
-/* line 23, ../../sass/_layout.scss */
+/* line 38, ../../sass/_layout.scss */
 footer > nav ul li {
   display: inline-block;
   margin: 15px;
 }
 
+@media screen and (max-width: 568px) {
+  /* line 46, ../../sass/_layout.scss */
+  footer > nav {
+    text-align: center;
+  }
+  /* line 48, ../../sass/_layout.scss */
+  footer > nav ul {
+    display: block;
+  }
+  /* line 50, ../../sass/_layout.scss */
+  footer > nav ul li {
+    width: 100%;
+  }
+}
 /* line 1, ../../sass/_footer.scss */
 div.style.line {
   display: block;
