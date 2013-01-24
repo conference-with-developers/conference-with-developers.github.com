@@ -71,7 +71,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 1, ../../sass/_typography.scss */
 body {
   color: #223;
-  font-size: 12pt;
+  font-size: 10.5pt;
 }
 
 @media screen and (max-width: 568px) {
@@ -88,12 +88,12 @@ hgroup.logotype {
 /* line 17, ../../sass/_typography.scss */
 hgroup.logotype h1 {
   color: #44a5cb;
-  font-size: 4.5em;
+  font-size: 4.6em;
 }
 /* line 21, ../../sass/_typography.scss */
 hgroup.logotype h2 {
   color: #999;
-  font-size: 2.6em;
+  font-size: 2.3em;
 }
 
 /* line 27, ../../sass/_typography.scss */
@@ -115,12 +115,25 @@ strong {
 }
 
 /* line 45, ../../sass/_typography.scss */
+dt {
+  margin: 0.3em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* line 51, ../../sass/_typography.scss */
+dd {
+  margin-left: 3em;
+  margin-bottom: 1.2em;
+}
+
+/* line 56, ../../sass/_typography.scss */
 article > h1 {
   font-size: 2.2em;
   color: #44a5cb;
 }
 
-/* line 50, ../../sass/_typography.scss */
+/* line 61, ../../sass/_typography.scss */
 article > h1:before {
   content: '@';
   margin-left: -0.92em;
@@ -129,13 +142,13 @@ article > h1:before {
   vertical-align: -0.25em;
 }
 
-/* line 58, ../../sass/_typography.scss */
+/* line 69, ../../sass/_typography.scss */
 h2 {
   font-size: 1.5em;
   font-weight: bold;
 }
 
-/* line 63, ../../sass/_typography.scss */
+/* line 74, ../../sass/_typography.scss */
 article > h2:before {
   content: '-';
   margin-left: -0.5em;
@@ -144,8 +157,20 @@ article > h2:before {
   vertical-align: -0.2em;
 }
 
-/* line 71, ../../sass/_typography.scss */
+/* line 82, ../../sass/_typography.scss */
 a {
+  color: #003e59;
+}
+
+/* line 87, ../../sass/_typography.scss */
+a.peatix {
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* line 94, ../../sass/_typography.scss */
+footer.dark a {
   color: #ededed;
 }
 
@@ -154,7 +179,7 @@ div.bracket:before {
   content: '[';
   margin-right: 0.2em;
   font-family: 'Raleway';
-  font-size: 12em;
+  font-size: 10em;
   color: #eee;
 }
 
@@ -163,7 +188,7 @@ div.bracket:after {
   content: ']';
   margin-left: 0.2em;
   font-family: 'Raleway';
-  font-size: 12em;
+  font-size: 10em;
   color: #eee;
 }
 
@@ -187,15 +212,13 @@ body > div > header {
   font-size: 4pt;
 }
 
-/*
-  :after {
-    content: ']'
-  }
+/* line 33, ../../sass/_logotype.scss */
+body > div > article > div > hgroup {
+  font-size: 8pt;
 }
 
-*/
 @media screen and (max-width: 568px) {
-  /* line 42, ../../sass/_logotype.scss */
+  /* line 39, ../../sass/_logotype.scss */
   div.bracket {
     font-size: 2.8pt;
   }
@@ -224,69 +247,119 @@ body > div {
 /* line 5, ../../sass/_layout.scss */
 article, header {
   margin: 0 auto;
-  width: 1120px;
+  width: 920px;
 }
 
-/* line 11, ../../sass/_layout.scss */
+/* line 10, ../../sass/_layout.scss */
+.clear-fix {
+  clear: both;
+}
+
+/* line 14, ../../sass/_layout.scss */
 header {
   text-align: right;
 }
 
-/* line 14, ../../sass/_layout.scss */
+/* line 17, ../../sass/_layout.scss */
 article > div.bracket {
-  padding: 120px 0;
+  padding: 80px 0;
   text-align: center;
 }
 
 @media screen and (max-width: 568px) {
-  /* line 20, ../../sass/_layout.scss */
+  /* line 23, ../../sass/_layout.scss */
   header {
     width: 100%;
   }
 
-  /* line 24, ../../sass/_layout.scss */
+  /* line 27, ../../sass/_layout.scss */
   article {
     width: 90%;
   }
-  /* line 26, ../../sass/_layout.scss */
+  /* line 29, ../../sass/_layout.scss */
   article > div.bracket {
     padding: 50px 0;
   }
 
-  /* line 30, ../../sass/_layout.scss */
+  /* line 33, ../../sass/_layout.scss */
   header {
     text-align: center;
   }
 }
-/* line 36, ../../sass/_layout.scss */
-footer > nav {
+/* line 39, ../../sass/_layout.scss */
+nav.global {
   text-align: center;
 }
-/* line 38, ../../sass/_layout.scss */
-footer > nav ul {
+/* line 41, ../../sass/_layout.scss */
+nav.global ul {
   display: block;
   margin: 50px;
 }
-/* line 41, ../../sass/_layout.scss */
-footer > nav ul li {
+/* line 44, ../../sass/_layout.scss */
+nav.global ul li {
   display: inline-block;
   margin: 15px;
 }
 
+/* line 51, ../../sass/_layout.scss */
+div#over > nav.global ul {
+  margin: 0;
+}
+
 @media screen and (max-width: 568px) {
-  /* line 49, ../../sass/_layout.scss */
+  /* line 56, ../../sass/_layout.scss */
   footer > nav {
     text-align: left;
   }
-  /* line 51, ../../sass/_layout.scss */
+  /* line 58, ../../sass/_layout.scss */
   footer > nav ul {
     display: block;
   }
-  /* line 53, ../../sass/_layout.scss */
+  /* line 60, ../../sass/_layout.scss */
   footer > nav ul li {
     width: 100%;
   }
 }
+/* line 67, ../../sass/_layout.scss */
+section.speaker {
+  display: block;
+}
+/* line 69, ../../sass/_layout.scss */
+section.speaker img {
+  display: block;
+  float: left;
+  width: 200px;
+}
+/* line 75, ../../sass/_layout.scss */
+section.speaker div {
+  float: left;
+}
+/* line 77, ../../sass/_layout.scss */
+section.speaker div hgroup {
+  display: block;
+  margin-left: 1em;
+}
+/* line 80, ../../sass/_layout.scss */
+section.speaker div hgroup h3 {
+  margin: 0.2em 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* line 86, ../../sass/_layout.scss */
+section.speaker div hgroup h4 {
+  font-weight: bold;
+}
+/* line 92, ../../sass/_layout.scss */
+section.speaker div p {
+  margin-left: 1em;
+  margin-top: 1.75em;
+}
+
+/* line 99, ../../sass/_layout.scss */
+section.speaker:after {
+  clear: both;
+}
+
 /* line 1, ../../sass/_footer.scss */
 div.style.line {
   display: block;
