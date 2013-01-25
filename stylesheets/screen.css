@@ -360,6 +360,22 @@ section.speaker:after {
   clear: both;
 }
 
+/* line 104, ../../sass/_layout.scss */
+table thead {
+  display: none;
+}
+/* line 107, ../../sass/_layout.scss */
+table tr {
+  display: block;
+  margin: 15px 0;
+  border-bottom: 1px solid #003E59;
+}
+/* line 112, ../../sass/_layout.scss */
+table td {
+  display: inline-block;
+  margin: 0.4em;
+}
+
 /* line 1, ../../sass/_footer.scss */
 div.style.line {
   display: block;
