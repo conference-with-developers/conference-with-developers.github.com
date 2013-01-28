@@ -354,23 +354,27 @@ section.speaker div p {
   margin-left: 1em;
   margin-top: 1.75em;
 }
+/* line 97, ../../sass/_layout.scss */
+section.speaker div.dummy {
+  margin-left: 200px;
+}
 
-/* line 99, ../../sass/_layout.scss */
+/* line 102, ../../sass/_layout.scss */
 section.speaker:after {
   clear: both;
 }
 
-/* line 104, ../../sass/_layout.scss */
+/* line 107, ../../sass/_layout.scss */
 table thead {
   display: none;
 }
-/* line 107, ../../sass/_layout.scss */
+/* line 110, ../../sass/_layout.scss */
 table tr {
   display: block;
   margin: 15px 0;
   border-bottom: 1px solid #003E59;
 }
-/* line 112, ../../sass/_layout.scss */
+/* line 115, ../../sass/_layout.scss */
 table td {
   display: inline-block;
   margin: 0.4em;
