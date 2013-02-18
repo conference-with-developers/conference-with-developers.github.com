@@ -148,7 +148,14 @@ h2 {
   font-weight: bold;
 }
 
-/* line 74, ../../sass/_typography.scss */
+@media screen and (max-width: 568px) {
+  /* line 75, ../../sass/_typography.scss */
+  article > h1 {
+    font-size: 1.8em;
+    word-break: break-all;
+  }
+}
+/* line 81, ../../sass/_typography.scss */
 article > h2:before {
   content: '-';
   margin-left: -0.5em;
@@ -157,19 +164,19 @@ article > h2:before {
   vertical-align: -0.2em;
 }
 
-/* line 82, ../../sass/_typography.scss */
+/* line 89, ../../sass/_typography.scss */
 a {
   color: #003e59;
 }
 
-/* line 87, ../../sass/_typography.scss */
+/* line 94, ../../sass/_typography.scss */
 a.peatix {
   margin-top: 1.5em;
   font-size: 1.5em;
   font-weight: bold;
 }
 
-/* line 94, ../../sass/_typography.scss */
+/* line 101, ../../sass/_typography.scss */
 footer.dark a {
   color: #ededed;
 }
@@ -221,6 +228,12 @@ body > div > article > div > hgroup {
   /* line 39, ../../sass/_logotype.scss */
   div.bracket {
     font-size: 2.8pt;
+  }
+}
+@media screen and (max-width: 568px) {
+  /* line 46, ../../sass/_logotype.scss */
+  article > div.bracket > hgroup {
+    font-size: 3.2pt;
   }
 }
 /* line 1, ../../sass/_base.scss */
